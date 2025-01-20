@@ -1,5 +1,9 @@
 function Button() {
-  return <></>;
+  return (
+    <>
+      <button>Klick me!</button>
+    </>
+  );
 }
 
 export default Button;

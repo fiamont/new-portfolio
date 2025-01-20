@@ -102,5 +102,5 @@ p {
 h1 {
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
-  font-size: 80vw;
+  font-size: 50vh;
 }

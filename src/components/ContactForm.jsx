@@ -1,5 +1,13 @@
 function ContactForm() {
-  return <></>;
+  return (
+    <>
+      <form action="">
+        <ul>
+          <h2>Contact Form</h2>
+        </ul>
+      </form>
+    </>
+  );
 }
 
 export default ContactForm;
