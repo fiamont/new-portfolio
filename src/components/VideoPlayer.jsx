@@ -1,5 +1,9 @@
 function VideoPlayer() {
-  return <></>;
+  return (
+    <>
+      <h2>Video Player</h2>
+    </>
+  );
 }
 
 export default VideoPlayer;
