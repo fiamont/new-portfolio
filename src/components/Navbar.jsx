@@ -1,27 +1,24 @@
-import { Link } from "react-router-dom";
+import { StyledNavbar, NavList, NavItem, NavLink } from "./Navbar.styles.js";
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <>
-      <nav>
-        <h3>Navbar</h3>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <StyledNavbar>
+      <NavList>
+        <NavItem>
+          <NavLink to="/">Home</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/about">About</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/projects">Projects</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/contact">Contact</NavLink>
+        </NavItem>
+      </NavList>
+    </StyledNavbar>
   );
-}
+};
 
 export default Navbar;

@@ -28,8 +28,6 @@ picture {
 body {
   line-height: 1.5;
   min-height: 100vh;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 /* make images easier to work with */
@@ -69,7 +67,7 @@ select {
 
 :root {
   --yellow-color: #f2cb05;
-  --light-orange-purple: #f29f05;
+  --light-orange-color: #f29f05;
   --orange-color: #f28705;
   --red-color: #f23e2e;
   --dark-grey-color: #484241;
@@ -102,5 +100,5 @@ p {
 h1 {
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
-  font-size: 50vh;
+  font-size: 30vh;
 }
