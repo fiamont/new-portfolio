@@ -3,8 +3,15 @@ import Slideshow from "../components/Slideshow";
 import { homeText } from "../texts/homeText";
 import TextBox from "../components/TextBox";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import VerticalLine from "../components/VerticalLine";
+
+const HomeDiv = styled.div`
+  position: relative;
+`;
 
 const HeaderDiv = styled.div`
+  position: relative;
+  z-index: 99;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,14 +49,15 @@ const IconContainer = styled.div`
     }
 
     @media (min-width: 1024px) {
-      width: 4rem;
+      width: 3rem;
     }
   }
 `;
 
 function Home() {
   return (
-    <>
+    <HomeDiv>
+      <VerticalLine width="24px" color="var(--yellow-color)" $right="15%" />
       <HeaderDiv>
         <HeaderOne>{homeText.headingOne}</HeaderOne>
         <HeaderTwo>{homeText.headingTwo}</HeaderTwo>
@@ -59,8 +67,13 @@ function Home() {
         </IconContainer>
       </HeaderDiv>
       <TextBox text={homeText.content} />
+      <TextBox text={homeText.content} />
+      <TextBox text={homeText.content} />
+      <TextBox text={homeText.content} />
+      <TextBox text={homeText.content} />
+      <TextBox text={homeText.content} />
       <Slideshow />
-    </>
+    </HomeDiv>
   );
 }
 

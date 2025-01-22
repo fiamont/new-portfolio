@@ -5,10 +5,12 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import InEnglish from "./pages/InEnglish";
+import FullScreenLine from "./components/FullScreenLine";
 
 function App() {
   return (
     <Router>
+      <FullScreenLine />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

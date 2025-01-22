@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 
 // Navbar
 export const StyledNavbar = styled.nav`
+  background-color: var(--light-grey);
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
   width: 100%;
   overflow: hidden;
+  border-bottom: 6px solid var(--light-orange-color);
 
   @media (max-width: 1067px) {
     display: flex;
