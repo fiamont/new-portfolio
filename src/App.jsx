@@ -4,19 +4,18 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import InEnglish from "./pages/InEnglish";
 
 function App() {
   return (
     <Router>
       <Layout>
         <Routes>
-          {" "}
-          {/* Byt ut Switch mot Routes */}
-          <Route path="/" element={<Home />} />{" "}
-          {/* Använd element istället för component */}
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/inEnglish" element={<InEnglish />} />
         </Routes>
       </Layout>
     </Router>

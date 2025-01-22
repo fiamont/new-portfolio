@@ -17,7 +17,7 @@ const Navbar = () => {
           <NavLink to="/contact">Kontakt</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/">In English</NavLink>
+          <NavLink to="/inEnglish">In English</NavLink>
         </NavItem>
       </NavList>
     </StyledNavbar>
