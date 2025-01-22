@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const FooterContainer = styled.footer`
+  border-top: 2px solid var(--red-color);
   text-align: center;
   padding: 1rem;
 `;

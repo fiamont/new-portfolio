@@ -8,8 +8,8 @@ function Projects() {
     <>
       <h1>{projectsText.heading}</h1>
       <TextBox text={projectsText.content} />
-      <WebDesign />
       <WebDevelopment />
+      <WebDesign />
     </>
   );
 }
