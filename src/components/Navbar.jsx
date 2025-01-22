@@ -5,16 +5,19 @@ const Navbar = () => {
     <StyledNavbar>
       <NavList>
         <NavItem>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">Hem</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about">Om mig</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/projects">Projekt</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact">Kontakt</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/inEnglish">In English</NavLink>
         </NavItem>
       </NavList>
     </StyledNavbar>

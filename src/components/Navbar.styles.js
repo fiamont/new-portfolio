@@ -1,37 +1,55 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-//navbar
+// Navbar
 export const StyledNavbar = styled.nav`
-  background-color: var(--light-orange-color);
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
+  background-color: var(--light-grey);
+  display: grid;
   align-items: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 150px;
+  grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 6px solid var(--light-orange-color);
+
+  @media (max-width: 1067px) {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+  }
 `;
 
-// ul
+// NavList
 export const NavList = styled.ul`
+  display: flex;
+  flex-direction: row;
+  grid-column: 2 / 4;
+  justify-content: space-between;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+
+  @media (max-width: 1067px) {
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 // li
 export const NavItem = styled.li`
-  margin-top: 2rem;
+  padding: 10px;
 `;
 
 // Link
 export const NavLink = styled(Link)`
   text-decoration: none;
   font-size: 25px;
-  color: var(--light-grey);
+  color: var(--dark-grey-color);
 
   &:hover {
     color: var(--red-color);

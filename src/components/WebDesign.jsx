@@ -1,15 +1,15 @@
 import ProjectBox from "./ProjectBox";
 import VideoPlayer from "./VideoPlayer";
-import { projectOne } from "../texts/projectsText";
+import { projectsText, projectOne } from "../texts/projectsText";
 import cartoonSofia from "../assets/cartoonSofia.png";
 
 function WebDesign() {
   return (
     <>
-      <h1>Web Design</h1>
+      <h1>{projectsText.underHeadingOne}</h1>
       <ProjectBox
         heading={projectOne.heading}
-        imgSrc={cartoonSofia} // Skicka bildens URL här
+        imgSrc={cartoonSofia}
         imgAlt="A description of the image"
         text={projectOne.content}
       />
