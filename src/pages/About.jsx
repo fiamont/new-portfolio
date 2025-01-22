@@ -5,7 +5,8 @@ function About() {
   return (
     <>
       <h1>{aboutText.heading}</h1>
-      <TextBox text={aboutText.content} />
+      <TextBox text={aboutText.contentFirstPart} />
+      <TextBox text={aboutText.contentSecondPart} />
     </>
   );
 }

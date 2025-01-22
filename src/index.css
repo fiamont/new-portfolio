@@ -27,7 +27,7 @@ picture {
 /* set up the body */
 body {
   line-height: 1.5;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 /* make images easier to work with */
@@ -100,5 +100,34 @@ p {
 h1 {
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
-  font-size: 30vh;
 }
+
+/* ------------------- */
+/* --- "Debugging" CSS */
+/* ------------------- */
+
+/* div {
+  border: 1px solid red;
+}
+nav {
+  border: 1px solid blue;
+}
+main {
+  border: 1px solid green;
+}
+
+h1 {
+  border: 1px solid rgb(219, 37, 177);
+}
+
+h2 {
+  border: 1px solid rgb(21, 98, 31);
+}
+
+p {
+  border: 1px solid rgb(210, 176, 23);
+}
+
+a {
+  border: 1px solid rgb(219, 37, 177);
+} */

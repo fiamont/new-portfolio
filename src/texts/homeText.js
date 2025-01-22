@@ -1,5 +1,5 @@
 export const homeText = {
-  headingOne: "portfolio.",
-  headingTwo: "Sofia Montgomery",
-  content: "This is the awesomest portfolio!",
+  headingOne: "Sofia Montgomery",
+  headingTwo: "portfolio.",
+  content: "Det här är en cool portfolio!",
 };
