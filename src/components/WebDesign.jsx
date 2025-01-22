@@ -1,20 +1,24 @@
 import ProjectBox from "./ProjectBox";
 import VideoPlayer from "./VideoPlayer";
-import { projectsText, projectOne } from "../texts/projectsText";
-import cartoonSofia from "../assets/cartoonSofia.png";
+import { projectsText, projectTwo } from "../texts/projectsText";
+import vaxtverketDesign from "../assets/vaxtverketDesign.png";
+import { StyledHeading } from "../components/ProjectPart.styles.js";
 
 function WebDesign() {
   return (
     <>
-      <h1>{projectsText.underHeadingOne}</h1>
+      <StyledHeading>{projectsText.underHeadingTwo}</StyledHeading>
       <ProjectBox
-        heading={projectOne.heading}
-        imgSrc={cartoonSofia}
-        imgAlt="A description of the image"
-        text={projectOne.content}
+        heading={projectTwo.heading}
+        imgSrc={vaxtverketDesign}
+        imgAlt="Informationsprodukt Växtverket"
+        width={350}
+        height={183}
+        text={projectTwo.content}
+        challenges={projectTwo.challenges}
+        solutions={projectTwo.solutions}
       />
       <VideoPlayer />
-      <ProjectBox />
     </>
   );
 }
