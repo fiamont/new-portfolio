@@ -14,10 +14,10 @@ const Navbar = () => {
           <NavLink to="/projects">Projekt</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/contact">Kontakt</NavLink>
+          <NavLink to="/inEnglish">In English</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/inEnglish">In English</NavLink>
+          <NavLink to="/contact">Kontakt</NavLink>
         </NavItem>
       </NavList>
     </StyledNavbar>
