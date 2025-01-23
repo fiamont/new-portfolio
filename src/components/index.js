@@ -14,5 +14,4 @@ export { default as Layout } from "./layout/Layout.jsx";
 export { default as VerticalLine } from "./layout/VerticalLine.jsx";
 
 // ui
-export { default as Button } from "./ui/Button.jsx";
 export { default as TextBox } from "./ui/TextBox.jsx";

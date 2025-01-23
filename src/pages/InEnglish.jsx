@@ -6,7 +6,7 @@ function InEnglish() {
   return (
     <>
       <h1>{inEnglishText.heading}</h1>
-      <TextBox text={inEnglishText.content} />
+      <TextBox>{inEnglishText.content}</TextBox>
       <h2>
         Projects <Link to="/projects">here</Link>
       </h2>
