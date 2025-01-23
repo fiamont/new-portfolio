@@ -1,5 +1,5 @@
 import { inEnglishText } from "../texts/inEnglishText";
-import TextBox from "../components/TextBox";
+import { TextBox } from "../components/index.js";
 import { Link } from "react-router-dom";
 
 function InEnglish() {

@@ -1,8 +1,6 @@
-import Slideshow from "../components/Slideshow";
 import { homeText } from "../texts/homeText";
-import TextBox from "../components/TextBox";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import VerticalLine from "../components/VerticalLine";
+import { Slideshow, TextBox, VerticalLine } from "../components/index.js";
 import {
   HeaderDiv,
   HeaderOne,

@@ -1,10 +1,9 @@
-import ProjectBox from "./ProjectBox";
-import VideoPlayer from "./VideoPlayer";
-import { projectsText, projectTwo } from "../texts/projectsText";
-import vaxtverketDesign from "../assets/vaxtverketDesign.png";
-import { StyledHeading } from "../components/ProjectPart.styles.js";
+import { ProjectBox, VideoPlayer } from "../../index.js";
+import { projectsText, projectTwo } from "../../../texts/projectsText.js";
+import vaxtverketDesign from "../../../assets/vaxtverketDesign.png";
+import { StyledHeading } from "../Project/ProjectPart.styles.js";
 
-function WebDesign() {
+function WebDesignPart() {
   return (
     <>
       <StyledHeading>{projectsText.underHeadingTwo}</StyledHeading>
@@ -23,4 +22,4 @@ function WebDesign() {
   );
 }
 
-export default WebDesign;
+export default WebDesignPart;

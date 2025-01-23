@@ -1,11 +1,10 @@
-import ProjectBox from "./ProjectBox";
-import VideoPlayer from "./VideoPlayer";
-import cartoonSofia from "../assets/cartoonSofia.png";
-import bollarSquare from "../assets/bollarSquare.jpg";
-import { projectsText, projectOne } from "../texts/projectsText";
-import { StyledHeading } from "../components/ProjectPart.styles.js";
+import { ProjectBox, VideoPlayer } from "../../index.js";
+import cartoonSofia from "../../../assets/cartoonSofia.png";
+import bollarSquare from "../../../assets/bollarSquare.jpg";
+import { projectsText, projectOne } from "../../../texts/projectsText.js";
+import { StyledHeading } from "../Project/ProjectPart.styles.js";
 
-function WebDevelopment() {
+function ProgrammingPart() {
   return (
     <>
       <StyledHeading>{projectsText.underHeadingOne}</StyledHeading>
@@ -34,4 +33,4 @@ function WebDevelopment() {
   );
 }
 
-export default WebDevelopment;
+export default ProgrammingPart;
