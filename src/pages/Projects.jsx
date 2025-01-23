@@ -9,7 +9,7 @@ function Projects() {
   return (
     <>
       <h1>{projectsText.heading}</h1>
-      <TextBox text={projectsText.content} />
+      <TextBox>{projectsText.content}</TextBox>
       <ProgrammingPart />
       <WebDesignPart />
     </>

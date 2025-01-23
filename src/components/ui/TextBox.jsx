@@ -1,10 +1,10 @@
 import styled from "styled-components";
 const StyledDiv = styled.div``;
 
-const TextBox = ({ text }) => {
+const TextBox = ({ children }) => {
   return (
     <StyledDiv className="text-box">
-      <p>{text}</p>
+      <p>{children}</p>
     </StyledDiv>
   );
 };

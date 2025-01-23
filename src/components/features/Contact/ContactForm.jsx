@@ -2,13 +2,16 @@ import { StyledForm } from "./ContactForm.styles";
 
 function ContactForm() {
   return (
-    <>
+    <div>
       <form action="">
-        <ul>
-          <h2>Contact Form</h2>
-        </ul>
+        <label>Namn</label>
+        <input type="text" />
+        <label>Email</label>
+        <input type="text" />
+        <label>Meddelande</label>
+        <textarea></textarea>
       </form>
-    </>
+    </div>
   );
 }
 

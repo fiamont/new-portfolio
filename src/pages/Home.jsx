@@ -20,12 +20,12 @@ function Home() {
           <FaLinkedin />
         </IconContainer>
       </HeaderDiv>
-      <TextBox text={homeText.content} />
-      <TextBox text={homeText.content} />
-      <TextBox text={homeText.content} />
-      <TextBox text={homeText.content} />
-      <TextBox text={homeText.content} />
-      <TextBox text={homeText.content} />
+      <TextBox>{homeText.content}</TextBox>
+      <TextBox>{homeText.content}</TextBox>
+      <TextBox>{homeText.content}</TextBox>
+      <TextBox>{homeText.content}</TextBox>
+      <TextBox>{homeText.content}</TextBox>
+      <TextBox>{homeText.content}</TextBox>
       <Slideshow />
     </>
   );

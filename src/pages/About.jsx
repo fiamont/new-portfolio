@@ -7,10 +7,10 @@ function About() {
   return (
     <>
       <h1>{aboutText.heading}</h1>
-      <TextBox text={aboutText.contentFirstPart} />
+      <TextBox>{aboutText.contentFirstPart}</TextBox>
       <StyledDiv>
         <StyledImg src={Me} alt="me" width={230} height={256} />
-        <TextBox text={aboutText.contentSecondPart} />
+        <TextBox>{aboutText.contentSecondPart}</TextBox>
       </StyledDiv>
     </>
   );
