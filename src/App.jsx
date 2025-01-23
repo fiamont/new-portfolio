@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Observera att vi nu använder Routes
-import Layout from "./components/Layout";
+import Layout from "./components/layout/Layout.jsx";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import InEnglish from "./pages/InEnglish";
-import FullScreenLine from "./components/FullScreenLine";
+import FullScreenLine from "./components/layout/FullScreenLine";
 
 function App() {
   return (

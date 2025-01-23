@@ -1,5 +1,4 @@
-import ContactForm from "../components/ContactForm";
-import TextBox from "../components/TextBox";
+import { ContactForm, TextBox } from "../components/index.js";
 import { contactText } from "../texts/contactText";
 
 function Contact() {

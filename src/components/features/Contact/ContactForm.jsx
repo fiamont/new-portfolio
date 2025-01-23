@@ -1,3 +1,5 @@
+import { StyledForm } from "./ContactForm.styles";
+
 function ContactForm() {
   return (
     <>

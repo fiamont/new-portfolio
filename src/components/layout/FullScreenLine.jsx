@@ -7,7 +7,7 @@ const StyledFullScreenLine = styled.div`
   left: 5%;
   width: 3px;
   background-color: var(--orange-color);
-  height: 100%; /* Sätt höjden till 100% av dokumentets höjd */
+  height: 100%;
 `;
 
 function FullScreenLine() {
