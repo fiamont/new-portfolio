@@ -86,7 +86,7 @@ select {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+* {
   font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--background-color);
@@ -100,16 +100,6 @@ p {
 h1 {
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
-  font-size: clamp(3rem, 13.5vw, 11rem);
-  padding-left: 5rem;
-
-  @media (max-width: 700px) {
-    padding-left: 3rem;
-  }
-}
-
-h2 {
-  font-size: clamp(1rem, 3.5vw, 5rem);
 }
 
 /* ------------------- */
