@@ -4,14 +4,13 @@ const StyledFullScreenLine = styled.div`
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 5%;
-  width: 3px;
-  background-color: var(--orange-color);
+  border-right: 3px solid var(--orange-color);
+  background: none;
   height: 100%;
 `;
 
 function FullScreenLine() {
-  return <StyledFullScreenLine />;
+  return <StyledFullScreenLine className="ps-1 ps-sm-2 ps-md-3 ps-lg-4" />;
 }
 
 export default FullScreenLine;

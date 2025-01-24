@@ -10,8 +10,8 @@ import {
 
 function Home() {
   return (
-    <>
-      <VerticalLine width="24px" color="var(--yellow-color)" $right="15%" />
+    <div>
+      {/* <VerticalLine width="24px" color="var(--yellow-color)" $right="15%" /> */}
       <HeaderDiv>
         <HeaderOne>{homeText.headingOne}</HeaderOne>
         <HeaderTwo>{homeText.headingTwo}</HeaderTwo>
@@ -27,7 +27,7 @@ function Home() {
       <TextBox>{homeText.content}</TextBox>
       <TextBox>{homeText.content}</TextBox>
       <Slideshow />
-    </>
+    </div>
   );
 }
 
