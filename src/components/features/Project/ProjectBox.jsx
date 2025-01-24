@@ -18,12 +18,12 @@ const ProjectBox = ({
     <StyledDiv className="project-box">
       <h2>{heading}</h2>
       <StyledContent>
+        <img src={imgSrc} alt={imgAlt} width={width} height={height} />
         <div>
           <p>{text}</p>
           <p>{challenges}</p>
           <p>{solutions}</p>
         </div>
-        <img src={imgSrc} alt={imgAlt} width={width} height={height} />
       </StyledContent>
     </StyledDiv>
   );

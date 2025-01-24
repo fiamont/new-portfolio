@@ -10,7 +10,7 @@ import FullScreenLine from "./components/layout/FullScreenLine";
 function App() {
   return (
     <Router>
-      <FullScreenLine />
+      {/* <FullScreenLine /> */}
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

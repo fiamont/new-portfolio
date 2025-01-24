@@ -1,5 +1,5 @@
 import { ProjectBox, VideoPlayer } from "../../index.js";
-import { projectsText, projectTwo } from "../../../texts/projectsText.js";
+import { projectsText, vaxtverket } from "../../../texts/projectsText.js";
 import vaxtverketDesign from "../../../assets/vaxtverketDesign.png";
 import { StyledHeading } from "../Project/ProjectPart.styles.js";
 
@@ -8,14 +8,14 @@ function WebDesignPart() {
     <>
       <StyledHeading>{projectsText.underHeadingTwo}</StyledHeading>
       <ProjectBox
-        heading={projectTwo.heading}
+        heading={vaxtverket.heading}
         imgSrc={vaxtverketDesign}
         imgAlt="Informationsprodukt Växtverket"
         width={350}
         height={183}
-        text={projectTwo.content}
-        challenges={projectTwo.challenges}
-        solutions={projectTwo.solutions}
+        text={vaxtverket.content}
+        challenges={vaxtverket.challenges}
+        solutions={vaxtverket.solutions}
       />
       <VideoPlayer />
     </>
