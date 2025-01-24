@@ -32,6 +32,16 @@ const StyledContainer = styled(Container)`
   background: none;
 `;
 
+const StyledNavbarBrand = styled(Navbar.Brand)`
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  &:hover {
+    color: var(--red-color);
+  }
+`;
+
 function Navigation() {
   const [expanded, setExpanded] = useState(false);
 
@@ -56,9 +66,9 @@ function Navigation() {
       expanded={expanded}
     >
       <StyledContainer>
-        <Navbar.Brand as={Link} to={"/"}>
+        <StyledNavbarBrand as={Link} to={"/"}>
           Hem
-        </Navbar.Brand>
+        </StyledNavbarBrand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={handleToggle}
