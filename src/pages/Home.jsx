@@ -1,6 +1,6 @@
 import { homeText } from "../texts/homeText";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { Slideshow, TextBox, VerticalLine } from "../components/index.js";
+import { Slideshow, TextBox } from "../components/index.js";
 import {
   HeaderDiv,
   HeaderOne,
@@ -10,8 +10,7 @@ import {
 
 function Home() {
   return (
-    <>
-      <VerticalLine width="24px" color="var(--yellow-color)" $right="15%" />
+    <div>
       <HeaderDiv>
         <HeaderOne>{homeText.headingOne}</HeaderOne>
         <HeaderTwo>{homeText.headingTwo}</HeaderTwo>
@@ -27,7 +26,7 @@ function Home() {
       <TextBox>{homeText.content}</TextBox>
       <TextBox>{homeText.content}</TextBox>
       <Slideshow />
-    </>
+    </div>
   );
 }
 

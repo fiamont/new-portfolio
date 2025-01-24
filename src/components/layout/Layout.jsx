@@ -1,10 +1,10 @@
-import { Navbar, Footer } from "../index.js";
+import { Navigation, Footer } from "../index.js";
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Navbar />
-      <main>{children}</main>
+      <Navigation />
+      <main className="p-2 p-sm-3 p-md-4 p-lg-5">{children}</main>
       <Footer />
     </div>
   );

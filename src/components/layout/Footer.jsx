@@ -1,27 +1,19 @@
 import styled from "styled-components";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-const FooterContainer = styled.footer``;
-
-const FooterText = styled.p``;
-
-const IconContainer = styled.div``;
-
-const StyledGithub = styled(FaGithub)``;
-
-const StyledLinkedin = styled(FaLinkedin)``;
-
 function Footer() {
   return (
-    <FooterContainer>
-      <FooterText>
-        &copy; {new Date().getFullYear()} Sofia Montgomery portfolio
-      </FooterText>
-      <IconContainer>
-        <StyledGithub />
-        <StyledLinkedin />
-      </IconContainer>
-    </FooterContainer>
+    <div>
+      <footer className="container-fluid text-center p-2 p-sm-3 p-md-4 p-lg-5">
+        <div>
+          <FaLinkedin className="mx-2 fs-1 fs-lg-2" />
+          <FaGithub className="mx-2 fs-1 fs-lg-2" />
+        </div>
+        <p className="pt-2">
+          &copy; {new Date().getFullYear()} Sofia Montgomery portfolio
+        </p>
+      </footer>
+    </div>
   );
 }
 
