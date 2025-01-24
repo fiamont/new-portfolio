@@ -10,8 +10,8 @@ function Projects() {
     <>
       <h1>{projectsText.heading}</h1>
       <TextBox>{projectsText.content}</TextBox>
-      <ProgrammingPart />
       <WebDesignPart />
+      <ProgrammingPart />
     </>
   );
 }

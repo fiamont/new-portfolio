@@ -1,7 +1,13 @@
 import { ProjectBox, VideoPlayer } from "../../index.js";
 import cartoonSofia from "../../../assets/cartoonSofia.png";
 import bollarSquare from "../../../assets/bollarSquare.jpg";
-import { projectsText, projectOne } from "../../../texts/projectsText.js";
+import {
+  projectsText,
+  vhvh,
+  memory,
+  sofiasNotepad,
+  unify,
+} from "../../../texts/projectsText.js";
 import { StyledHeading } from "../Project/ProjectPart.styles.js";
 
 function ProgrammingPart() {
@@ -9,25 +15,45 @@ function ProgrammingPart() {
     <>
       <StyledHeading>{projectsText.underHeadingOne}</StyledHeading>
       <ProjectBox
-        heading={projectOne.heading}
+        heading={vhvh.heading}
         imgSrc={cartoonSofia}
         imgAlt="cartoon Sofia"
         width={300}
         height={300}
-        text={projectOne.content}
-        challenges={projectOne.challenges}
-        solutions={projectOne.solutions}
+        text={vhvh.content}
+        challenges={vhvh.challenges}
+        solutions={vhvh.solutions}
       />
       <VideoPlayer />
       <ProjectBox
-        heading={projectOne.heading}
+        heading={sofiasNotepad.heading}
         imgSrc={bollarSquare}
         imgAlt={"yellow balls"}
         width={300}
         height={300}
-        text={projectOne.content}
-        challenges={projectOne.challenges}
-        solutions={projectOne.solutions}
+        text={sofiasNotepad.content}
+        challenges={sofiasNotepad.challenges}
+        solutions={sofiasNotepad.solutions}
+      />
+      <ProjectBox
+        heading={unify.heading}
+        imgSrc={cartoonSofia}
+        imgAlt="cartoon Sofia"
+        width={300}
+        height={300}
+        text={unify.content}
+        challenges={unify.challenges}
+        solutions={unify.solutions}
+      />
+      <ProjectBox
+        heading={memory.heading}
+        imgSrc={bollarSquare}
+        imgAlt={"yellow balls"}
+        width={300}
+        height={300}
+        text={memory.content}
+        challenges={memory.challenges}
+        solutions={memory.solutions}
       />
     </>
   );
