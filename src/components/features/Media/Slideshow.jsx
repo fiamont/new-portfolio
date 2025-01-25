@@ -7,8 +7,7 @@ import awesomeMemory from "./../../../assets/awesomeMemory.png";
 import { Row, Col } from "react-bootstrap";
 
 const StyledDiv = styled.div`
-  background-color: rgb(72, 66, 65, 0.7);
-  border-radius: 10px;
+  box-shadow: -3px 3px 5px var(--dark-grey-color);
 `;
 
 const StyledCarousel = styled(Carousel)`
@@ -33,7 +32,7 @@ function Slideshow() {
   return (
     <Row className="justify-content-center ">
       <Col xs={11} sm={9} md={6}>
-        <StyledDiv className="d-flex flex-column text-center p-2 p-md-8">
+        <StyledDiv className="d-flex flex-column text-center">
           <StyledCarousel fade activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
               <img src={examensprojektet} text="examensprojektet" />
