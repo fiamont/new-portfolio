@@ -1,24 +1,25 @@
-import { ProjectBox, VideoPlayer } from "../../index.js";
-import { projectsText, vaxtverket } from "../../../texts/projectsText.js";
+import { ProjectBox } from "../../index.js";
+import { vaxtverket } from "../../../texts/projectsText.js";
 import vaxtverketDesign from "../../../assets/vaxtverketDesign.png";
-import { StyledHeading } from "../Project/ProjectPart.styles.js";
+import { StyledDiv } from "../Project/ProjectPart.styles.js";
+import { Row, Col } from "react-bootstrap";
 
 function WebDesignPart() {
   return (
-    <>
-      <StyledHeading>{projectsText.underHeadingTwo}</StyledHeading>
-      <ProjectBox
-        heading={vaxtverket.heading}
-        imgSrc={vaxtverketDesign}
-        imgAlt="Informationsprodukt Växtverket"
-        width={350}
-        height={183}
-        text={vaxtverket.content}
-        challenges={vaxtverket.challenges}
-        solutions={vaxtverket.solutions}
-      />
-      <VideoPlayer />
-    </>
+    <Row className="d-flex justify-content-center">
+      <Col>
+        <ProjectBox
+          heading={vaxtverket.heading}
+          imgSrc={vaxtverketDesign}
+          imgAlt="Informationsprodukt Växtverket"
+          width={300}
+          height={157}
+          text={vaxtverket.content}
+          challenges={vaxtverket.challenges}
+          solutions={vaxtverket.solutions}
+        />
+      </Col>
+    </Row>
   );
 }
 

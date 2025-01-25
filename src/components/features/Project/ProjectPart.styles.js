@@ -1,3 +1,6 @@
 import styled from "styled-components";
 
-export const StyledHeading = styled.h1``;
+export const StyledDiv = styled.div`
+`;
+
+

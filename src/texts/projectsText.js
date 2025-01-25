@@ -1,7 +1,6 @@
-export const projectsText = {
+export const projectText = {
   heading: "Projekt",
-  underHeadingOne: "Programmering",
-  underHeadingTwo: "Webbdesign",
+  klickImg: "Intresserad av koden? Klicka på bilden!",
   content:
     "Här är ett urval av de projekt jag har gjort eller håller på med. De har huvudfokus på dels programmering och dels webbdesign",
 };
@@ -33,6 +32,7 @@ export const vhvh = {
     "Utmaningar: Att lära sig Spring och förstå detta med API:er så att alla delar kommunicerar med varandra.",
   solutions:
     "Lösning: En postgres-databas, frontend skriven med Next.js och backend skriven i Java-ramverket Spring.",
+  demo: "Här är en demo över VHVH.",
 };
 
 export const sofiasNotepad = {
