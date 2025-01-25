@@ -1,6 +1,9 @@
 import { ProjectBox, VideoPlayer } from "../../index.js";
-import cartoonSofia from "../../../assets/cartoonSofia.png";
+import examensprojektet from "../../../assets/examensprojektet.png";
 import bollarSquare from "../../../assets/bollarSquare.jpg";
+import cartoonSofia from "../../../assets/cartoonSofia.png";
+import awesomeMemory from "../../../assets/awesomeMemory.png";
+
 import {
   projectsText,
   vhvh,
@@ -16,10 +19,10 @@ function ProgrammingPart() {
       <StyledHeading>{projectsText.underHeadingOne}</StyledHeading>
       <ProjectBox
         heading={vhvh.heading}
-        imgSrc={cartoonSofia}
-        imgAlt="cartoon Sofia"
-        width={300}
-        height={300}
+        imgSrc={examensprojektet}
+        imgAlt="examensprojektet"
+        width={350}
+        height={183}
         text={vhvh.content}
         challenges={vhvh.challenges}
         solutions={vhvh.solutions}
@@ -47,10 +50,10 @@ function ProgrammingPart() {
       />
       <ProjectBox
         heading={memory.heading}
-        imgSrc={bollarSquare}
-        imgAlt={"yellow balls"}
-        width={300}
-        height={300}
+        imgSrc={awesomeMemory}
+        imgAlt={"awesomeMemory"}
+        width={350}
+        height={183}
         text={memory.content}
         challenges={memory.challenges}
         solutions={memory.solutions}

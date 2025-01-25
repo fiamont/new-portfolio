@@ -1,5 +1,5 @@
 export const homeText = {
-  headingOne: "Sofia Montgomery",
-  headingTwo: "portfolio.",
   content: "Webbutvecklare och blivande webbdesigner.",
+  slideshow:
+    "Här är ett urval av mina projekt, klicka på bilden för att läsa om just det projektet!",
 };
