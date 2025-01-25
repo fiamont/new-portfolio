@@ -1,5 +1,8 @@
 import styled from "styled-components";
-const StyledDiv = styled.div``;
+const StyledDiv = styled.div`
+  display: block;
+  padding-top: 1.8rem;
+`;
 
 const TextBox = ({ children }) => {
   return (
