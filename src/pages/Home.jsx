@@ -36,8 +36,10 @@ function Home() {
           </Col>
         </Row>
       </HeaderDiv>
-      <TextBox>{homeText.content}</TextBox>
-      <Slideshow />
+      <div className="d-flex flex-column justify-content-center align-items-center">
+        <p className="pt-1 pb-3 text-center fs-4 fs-mg-1">{homeText.content}</p>
+        <Slideshow />
+      </div>
     </div>
   );
 }
