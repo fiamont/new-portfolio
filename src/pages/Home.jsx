@@ -4,7 +4,7 @@ import { Slideshow } from "../components/index.js";
 import portfolio from "./../assets/heroImg.png";
 import { Row, Col } from "react-bootstrap";
 
-import { HeaderDiv, IconContainer } from "../pages/Home.styles.js";
+import { HeaderDiv, IconContainer, StyledA } from "../pages/Home.styles.js";
 
 function Home() {
   return (
@@ -18,20 +18,20 @@ function Home() {
         <Row className="justify-content-center">
           <Col xs={12} sm={11} md={10} className="text-center">
             <IconContainer className="pb-2 fs-1 fs-lg-2">
-              <a
+              <StyledA
                 href="https://github.com/fiamont"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaGithub />
-              </a>
-              <a
+              </StyledA>
+              <StyledA
                 href="https://www.linkedin.com/in/sofia-montgomery-3175a821a"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin />
-              </a>
+              </StyledA>
             </IconContainer>
           </Col>
         </Row>

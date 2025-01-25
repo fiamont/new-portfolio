@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import vaxtverketDesign from "./../../../assets/vaxtverketDesign.png";
-import examensprojektet from "./../../../assets/examensprojektet.png";
+import vhvhStartsida from "./../../../assets/vhvhStartsida.png";
 import awesomeMemory from "./../../../assets/awesomeMemory.png";
+import unify from "./../../../assets/unify.png";
 import { Row, Col } from "react-bootstrap";
 
 const StyledDiv = styled.div`
@@ -35,7 +36,7 @@ function Slideshow() {
         <StyledDiv className="d-flex flex-column text-center">
           <StyledCarousel fade activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
-              <img src={examensprojektet} text="examensprojektet" />
+              <img src={vhvhStartsida} text="vhvhStartsida" />
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -44,6 +45,10 @@ function Slideshow() {
             </Carousel.Item>
             <Carousel.Item>
               <img src={vaxtverketDesign} text="växtverket" />
+              <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img src={unify} text="unify" />
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
           </StyledCarousel>

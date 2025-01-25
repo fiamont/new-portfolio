@@ -86,7 +86,7 @@ select {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
+body {
   font-family: var(--font-family);
   color: var(--text-color);
   background-color: var(--background-color);
