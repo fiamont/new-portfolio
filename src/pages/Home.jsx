@@ -1,6 +1,6 @@
 import { homeText } from "../texts/homeText";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { Slideshow, TextBox } from "../components/index.js";
+import { Slideshow } from "../components/index.js";
 import portfolio from "./../assets/heroImg.png";
 import { Row, Col } from "react-bootstrap";
 
@@ -38,6 +38,9 @@ function Home() {
       </HeaderDiv>
       <div className="d-flex flex-column justify-content-center align-items-center">
         <p className="pt-1 pb-3 text-center fs-4 fs-mg-1">{homeText.content}</p>
+        <p className="pt-1 pb-3 text-center fs-6 fs-mg-3 fs-lg-2">
+          {homeText.slideshow}
+        </p>
         <Slideshow />
       </div>
     </div>

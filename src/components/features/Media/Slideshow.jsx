@@ -7,7 +7,7 @@ import awesomeMemory from "./../../../assets/awesomeMemory.png";
 import { Row, Col } from "react-bootstrap";
 
 const StyledDiv = styled.div`
-  background-color: rgb(242, 159, 5, 0.7);
+  background-color: rgb(72, 66, 65, 0.7);
   border-radius: 10px;
 `;
 
