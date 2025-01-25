@@ -1,23 +1,53 @@
 import { ContactForm, TextBox } from "../components/index.js";
 import { contactText } from "../texts/contactText";
 import { Link } from "react-router-dom";
+import curvyLineOrange from "./../assets/curvyLineOrange.png";
+import roundYellowImage from "./../assets/roundYellowImage.png";
+import { Row, Col } from "react-bootstrap";
+import styled from "styled-components";
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: var(--red-color);
+`;
 
 function Contact() {
   return (
     <>
-      <h1>{contactText.heading}</h1>
-      <TextBox>
-        {contactText.contentPartOne}
-        <Link
-          to={contactText.linkedInUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {contactText.linkedIn}
-        </Link>
-        {contactText.contentPartTwo}
-      </TextBox>
+      <Row className="d-flex flex-row justify-content-center justify-content-md-start align-items-center">
+        <Col xs={10} sm={3} className="text-start text-md-end">
+          <h1>{contactText.heading}</h1>
+        </Col>
+        <Col xs={8} sm={5} className="ml-auto">
+          <img
+            src={curvyLineOrange}
+            alt="curvyLineOrange"
+            className="img-fluid"
+          />
+        </Col>
+      </Row>
+      <Row className="justify-content-center">
+        <Col xs={10} className="text-center pt-4 pb-3">
+          <TextBox>
+            {contactText.contentPartOne}
+            <StyledLink
+              to={contactText.linkedInUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ps-1 pe-1"
+            >
+              {contactText.linkedIn}
+            </StyledLink>
+            {contactText.contentPartTwo}
+          </TextBox>
+        </Col>
+      </Row>
       <ContactForm />
+      <img
+        src={roundYellowImage}
+        alt="roundYellowImage"
+        className="img-fluid"
+      />
     </>
   );
 }
