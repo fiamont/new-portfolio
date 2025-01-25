@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import curvyLineOrange from "./../assets/curvyLineOrange.png";
 import meRound from "./../assets/meRound.png";
 import { Row, Col } from "react-bootstrap";
+import styled from "styled-components";
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: var(--orange-color);
+`;
 
 function InEnglish() {
   return (
@@ -20,21 +26,33 @@ function InEnglish() {
           />
         </Col>
       </Row>
-      <img src={meRound} alt="me round" className="img-fluid" />
-      <TextBox>{inEnglishText.content}</TextBox>
-      <div>
-        <h2>
-          Projects <Link to="/projects">here</Link>
-        </h2>
-        <h2>
-          Contact <Link to="/contact">here</Link>
-        </h2>
-        <img
-          src={curvyLineOrange}
-          alt="curvyLineOrange"
-          className="img-fluid"
-        />
-      </div>
+
+      <Row className="d-flex justify-content-center align-items-center pt-4 pb-4">
+        <Col xs={9} md={7} className="justify-content-center">
+          <TextBox>{inEnglishText.content}</TextBox>
+          <div className="pt-3">
+            <p>
+              Projects
+              <StyledLink to="/projects" className="ps-1 pe-1">
+                here.
+              </StyledLink>
+            </p>
+            <p>
+              Contact
+              <StyledLink to="/contact" className="ps-1 pe-1">
+                here.
+              </StyledLink>
+            </p>
+          </div>
+        </Col>
+        <Col
+          xs={9}
+          md={4}
+          className="d-flex justify-content-center align-items-center"
+        >
+          <img src={meRound} alt="me round" className="img-fluid" />
+        </Col>
+      </Row>
     </>
   );
 }
