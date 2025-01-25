@@ -62,7 +62,7 @@ function Navigation() {
     <StyledNavbar
       collapseOnSelect
       expand="lg"
-      className="p-2 p-sm-3 p-md-4 p-lg-5"
+      className="pt-1 pt-sm-2 pt-md-3 pt-lg-4"
       expanded={expanded}
     >
       <StyledContainer>
