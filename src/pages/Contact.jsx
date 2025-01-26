@@ -2,7 +2,7 @@ import { ContactForm, TextBox } from "../components/index.js";
 import { contactText } from "../texts/contactText";
 import { Link } from "react-router-dom";
 import curvyLineOrange from "./../assets/curvyLineOrange.png";
-import roundYellowImage from "./../assets/roundYellowImage.png";
+import girlcartoon from "./../assets/girlcartoon.png";
 import { Row, Col } from "react-bootstrap";
 import styled from "styled-components";
 
@@ -43,11 +43,7 @@ function Contact() {
         </Col>
       </Row>
       <ContactForm />
-      <img
-        src={roundYellowImage}
-        alt="roundYellowImage"
-        className="img-fluid"
-      />
+      <img src={girlcartoon} alt="girlcartoon" className="img-fluid" />
     </>
   );
 }
