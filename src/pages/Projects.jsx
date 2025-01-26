@@ -37,7 +37,7 @@ function Projects() {
           gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))",
         }}
       >
-        <Col>
+        <Col id="vhvh">
           <ProjectBox
             heading={vhvh.heading}
             imgSrc={examensprojektet}
@@ -51,7 +51,7 @@ function Projects() {
             extraText={projectText.klickImg}
           />
         </Col>
-        <Col>
+        <Col id="vaxtverket">
           <ProjectBox
             heading={vaxtverket.heading}
             imgSrc={vaxtverketImg}
@@ -63,7 +63,7 @@ function Projects() {
             solutions={vaxtverket.solutions}
           />
         </Col>
-        <Col>
+        <Col id="unify">
           <ProjectBox
             heading={unify.heading}
             imgSrc={unifyImg}
@@ -77,7 +77,7 @@ function Projects() {
             extraText={projectText.klickImg}
           />
         </Col>
-        <Col>
+        <Col id="awesomeMemory">
           <ProjectBox
             heading={memory.heading}
             imgSrc={awesomeMemory}

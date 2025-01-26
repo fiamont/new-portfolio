@@ -6,6 +6,7 @@ import vhvhStartsida from "./../../../assets/vhvhStartsida.png";
 import awesomeMemory from "./../../../assets/awesomeMemory.png";
 import unify from "./../../../assets/unify.png";
 import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const StyledDiv = styled.div`
   box-shadow: -3px 3px 5px var(--dark-grey-color);
@@ -36,19 +37,27 @@ function Slideshow() {
         <StyledDiv className="d-flex flex-column text-center">
           <StyledCarousel fade activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
-              <img src={vhvhStartsida} text="vhvhStartsida" />
+              <Link to="/projects#vhvh">
+                <img src={vhvhStartsida} text="vhvhStartsida" />
+              </Link>
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img src={awesomeMemory} text="awesome memory" />
+              <Link to="/projects#awesomeMemory">
+                <img src={awesomeMemory} text="awesome memory" />
+              </Link>
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img src={vaxtverketDesign} text="växtverket" />
+              <Link to="/projects#vaxtverket">
+                <img src={vaxtverketDesign} text="växtverket" />
+              </Link>
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-              <img src={unify} text="unify" />
+              <Link to="/projects#unify">
+                <img src={unify} text="unify" />
+              </Link>
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
           </StyledCarousel>
