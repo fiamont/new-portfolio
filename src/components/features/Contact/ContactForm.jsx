@@ -1,51 +1,28 @@
-import {
-  StyledForm,
-  StyledLabel,
-  StyledInput,
-  StyledTextarea,
-} from "./ContactForm.styles";
+import { StyledDiv, StyledButton } from "./ContactForm.styles";
+import { Form, Button } from "react-bootstrap";
 
 const ContactForm = () => {
   return (
-    <div>
-      <StyledForm action="" autoComplete="on">
-        <div>
-          <StyledLabel htmlFor="name">Namn</StyledLabel>
-          <StyledInput type="text" id="name" name="name" autoComplete="name" />
-        </div>
-        <div>
-          <StyledLabel htmlFor="email">Email</StyledLabel>
-          <StyledInput
-            type="email"
-            id="email"
-            name="email"
-            autoComplete="email"
-          />
-        </div>
-        <div>
-          <StyledLabel htmlFor="message">Meddelande</StyledLabel>
-          <StyledTextarea
-            id="message"
-            name="message"
-            autoComplete="off"
-          ></StyledTextarea>
-        </div>
-        <div>
-          <label htmlFor="robotCheck">
-            <input
-              type="checkbox"
-              id="robotCheck"
-              name="robotCheck"
-              autoComplete="off"
-            />
-            Jag är ingen robot
-          </label>
-        </div>
-        <div>
-          <button type="submit">Skicka</button>
-        </div>
-      </StyledForm>
-    </div>
+    <StyledDiv className="p-3">
+      <Form>
+        <Form.Group className="mb-3" controlId="contactForm.ControlInput1">
+          <Form.Label>Namn</Form.Label>
+          <Form.Control type="name" placeholder="namn namn" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="contactForm.ControlInput2">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="email" placeholder="name@example.com" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="contactForm.ControlTextarea1">
+          <Form.Label>Meddelande</Form.Label>
+          <Form.Control as="textarea" rows={4} />
+        </Form.Group>
+        <Form.Check label="Jag är inte en robot" />
+        <Button variant="warning" type="submit" size="lg">
+          Skicka
+        </Button>
+      </Form>
+    </StyledDiv>
   );
 };
 
