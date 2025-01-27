@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { StyledDiv, ButtonContainer, StyledButton } from "./ContactForm.styles";
 import { Form } from "react-bootstrap";
 
 function ContactForm() {
+  const formRef = useRef();
   const [validated, setValidated] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -13,22 +15,11 @@ function ContactForm() {
 
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
-    const updatedData = {
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    };
-    console.log("Updated formData:", updatedData);
-    setFormData(updatedData);
-  };
-
-  // Utan console.log för ändring senare
-  /* const handleChange = (event) => {
-    const { name, value, type, checked } = event.target;
     setFormData({
       ...formData,
       [name]: type === "checkbox" ? checked : value,
     });
-  }; */
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -36,7 +27,31 @@ function ContactForm() {
     if (form.checkValidity() === false) {
       event.stopPropagation();
     } else {
-      console.log("Form Data:", formData);
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            console.log("Email skickat!");
+            alert("Ditt meddelande har skickats!");
+            setFormData({
+              name: "",
+              email: "",
+              message: "",
+              notARobot: false,
+            });
+            setValidated(false);
+            formRef.current.reset();
+          },
+          (error) => {
+            console.log("Ett fel uppstod:", error.text);
+            alert("Det gick inte att skicka ditt meddelande.");
+          }
+        );
     }
 
     setValidated(true);
@@ -44,7 +59,12 @@ function ContactForm() {
 
   return (
     <StyledDiv className="p-3">
-      <Form noValidate validated={validated} onSubmit={handleSubmit}>
+      <Form
+        noValidate
+        validated={validated}
+        onSubmit={handleSubmit}
+        ref={formRef}
+      >
         <Form.Group className="mb-3" controlId="contactForm.ControlInput1">
           <Form.Label>Namn</Form.Label>
           <Form.Control
