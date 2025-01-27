@@ -42,8 +42,15 @@ function Contact() {
           </TextBox>
         </Col>
       </Row>
-      <ContactForm />
-      <img src={girlcartoon} alt="girlcartoon" className="img-fluid" />
+
+      <Row className="justify-content-center align-items-center">
+        <Col xs={12} md={7}>
+          <ContactForm />
+        </Col>
+        <Col xs={7} md={4}>
+          <img src={girlcartoon} alt="girlcartoon" className="img-fluid" />
+        </Col>
+      </Row>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { StyledDiv } from "./ContactForm.styles";
-import { Form, Button } from "react-bootstrap";
+import { StyledDiv, ButtonContainer, StyledButton } from "./ContactForm.styles";
+import { Form } from "react-bootstrap";
 
 function ContactForm() {
   const [validated, setValidated] = useState(false);
@@ -99,9 +99,11 @@ function ContactForm() {
             onChange={handleChange}
           />
         </Form.Group>
-        <Button variant="warning" type="submit" size="lg">
-          Skicka
-        </Button>
+        <ButtonContainer className="mt-4">
+          <StyledButton type="submit" className="fs-3 pe-3 ps-3">
+            Skicka
+          </StyledButton>
+        </ButtonContainer>
       </Form>
     </StyledDiv>
   );
