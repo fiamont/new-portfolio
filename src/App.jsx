@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Observera att vi nu använder Routes
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout/Layout.jsx";
 import Home from "./pages/Home";
 import About from "./pages/About";
