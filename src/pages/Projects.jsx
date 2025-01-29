@@ -5,6 +5,8 @@ import unifyImg from "./../assets/unify.png";
 import vaxtverketImg from "./../assets/vaxtverketDesign.png";
 import curvyLineOrange from "./../assets/curvyLineOrange.png";
 import { Row, Col } from "react-bootstrap";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
   vaxtverket,
   vhvh,
@@ -16,6 +18,17 @@ import {
 import { TextBox, ProjectBox } from "../components/index.js";
 
 function Projects() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1)); // Tar bort '#' och hittar elementet
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <Row className="d-flex flex-row justify-content-center align-items-center ps-md-5 pb-2">
