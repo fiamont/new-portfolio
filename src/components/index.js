@@ -1,6 +1,6 @@
 //features
 export { default as ContactForm } from "./features/Contact/ContactForm.jsx";
-export { default as Slideshow } from "./features/Media/Slideshow.jsx";
+export { default as HomeSlideshow } from "./features/Media/HomeSlideshow.jsx";
 export { default as VideoPlayer } from "./features/Media/VideoPlayer.jsx";
 
 //layout
