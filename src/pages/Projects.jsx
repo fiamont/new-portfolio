@@ -15,14 +15,24 @@ import {
   sofiasNotepad,
   projectText,
 } from "../texts/projectsText";
-import { TextBox, ProjectBox } from "../components/index.js";
+import { TextBox, ProjectBox, VideoPlayer } from "../components/index.js";
+import styled from "styled-components";
+
+const StyledCol = styled(Col)`
+  display: flex;
+  justify-content: center;
+`;
+
+const StyledH2 = styled.h2`
+  font-family: var(--heading-font-family);
+`;
 
 function Projects() {
   const location = useLocation();
 
   useEffect(() => {
     if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1)); // Tar bort '#' och hittar elementet
+      const element = document.getElementById(location.hash.substring(1));
       if (element) {
         element.scrollIntoView({ behavior: "smooth", block: "start" });
       }
@@ -43,14 +53,18 @@ function Projects() {
           />
         </Col>
       </Row>
-      <TextBox>{projectText.content}</TextBox>
+      <Row className="d-flex justify-content-center align-items-center text-center">
+        <Col>
+          <TextBox className="p-1">{projectText.content}</TextBox>
+        </Col>
+      </Row>
       <Row
-        className="d-grid gap-4"
+        className="d-grid gap-3"
         style={{
           gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))",
         }}
       >
-        <Col id="vhvh">
+        <StyledCol id="vhvh">
           <ProjectBox
             heading={vhvh.heading}
             imgSrc={examensprojektet}
@@ -58,13 +72,14 @@ function Projects() {
             width={300}
             height={157}
             text={vhvh.content}
-            challenges={vhvh.challenges}
-            solutions={vhvh.solutions}
+            challenge={projectText.challenge}
+            solution={projectText.solution}
+            challengeText={vhvh.challenge}
+            solutionText={vhvh.solution}
             githubLink="https://github.com/fiamont/vhvh-frontend.git"
-            extraText={projectText.klickImg}
           />
-        </Col>
-        <Col id="vaxtverket">
+        </StyledCol>
+        <StyledCol id="vaxtverket">
           <ProjectBox
             heading={vaxtverket.heading}
             imgSrc={vaxtverketImg}
@@ -72,11 +87,13 @@ function Projects() {
             width={300}
             height={157}
             text={vaxtverket.content}
-            challenges={vaxtverket.challenges}
-            solutions={vaxtverket.solutions}
+            challenge={projectText.challenge}
+            solution={projectText.solution}
+            challengeText={vaxtverket.challenge}
+            solutionText={vaxtverket.solution}
           />
-        </Col>
-        <Col id="unify">
+        </StyledCol>
+        <StyledCol id="unify">
           <ProjectBox
             heading={unify.heading}
             imgSrc={unifyImg}
@@ -84,13 +101,14 @@ function Projects() {
             width={300}
             height={157}
             text={unify.content}
-            challenges={unify.challenges}
-            solutions={unify.solutions}
+            challenge={projectText.challenge}
+            solution={projectText.solution}
+            challengeText={unify.challenge}
+            solutionText={unify.solution}
             githubLink="https://github.com/fiamont/unify.git"
-            extraText={projectText.klickImg}
           />
-        </Col>
-        <Col id="awesomeMemory">
+        </StyledCol>
+        <StyledCol id="awesomeMemory">
           <ProjectBox
             heading={memory.heading}
             imgSrc={awesomeMemory}
@@ -98,13 +116,14 @@ function Projects() {
             width={300}
             height={157}
             text={memory.content}
-            challenges={memory.challenges}
-            solutions={memory.solutions}
+            challenge={projectText.challenge}
+            solution={projectText.solution}
+            challengeText={memory.challenge}
+            solutionText={memory.solution}
             githubLink="https://github.com/fiamont/sti-memory.git"
-            extraText={projectText.klickImg}
           />
-        </Col>
-        <Col>
+        </StyledCol>
+        <StyledCol>
           <ProjectBox
             heading={sofiasNotepad.heading}
             imgSrc={sofiasNotepadImg}
@@ -112,11 +131,31 @@ function Projects() {
             width={300}
             height={157}
             text={sofiasNotepad.content}
-            challenges={sofiasNotepad.challenges}
-            solutions={sofiasNotepad.solutions}
+            challenge={projectText.challenge}
+            solution={projectText.solution}
+            challengeText={sofiasNotepad.challenge}
+            solutionText={sofiasNotepad.solution}
             githubLink="https://github.com/fiamont/Sofias_Notepad.git"
-            extraText={projectText.klickImg}
           />
+        </StyledCol>
+      </Row>
+      <Row className="d-flex flex-row justify-content-center align-items-center ps-md-5 pb-2">
+        <Col xs={10} sm={3} lg={2} className="text-center ps-3">
+          <StyledH2>Demos</StyledH2>
+        </Col>
+        <Col xs={6} sm={4} className="ml-auto">
+          <img
+            src={curvyLineOrange}
+            alt="curvyLineOrange"
+            className="img-fluid"
+          />
+        </Col>
+      </Row>
+      <Row className="d-flex justify-content-center align-items-center text-center">
+        <Col>
+          <TextBox>{projectText.contentDemo}</TextBox>
+          <p>vhvh-demo...</p>
+          <VideoPlayer />
         </Col>
       </Row>
     </>

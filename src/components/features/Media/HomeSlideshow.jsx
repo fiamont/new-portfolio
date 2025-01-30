@@ -8,8 +8,10 @@ import unify from "./../../../assets/unify.png";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const StyledDiv = styled.div`
-  box-shadow: -3px 3px 5px var(--dark-grey-color);
+const StyledCol = styled(Col)`
+  background: #ececec;
+  border-radius: 20px;
+  box-shadow: -4px 4px 5px #cecece;
 `;
 
 const StyledCarousel = styled(Carousel)`
@@ -32,9 +34,9 @@ function Slideshow() {
   };
 
   return (
-    <Row className="justify-content-center ">
-      <Col xs={11} sm={9} md={6}>
-        <StyledDiv className="d-flex flex-column text-center">
+    <Row className="justify-content-center">
+      <StyledCol xs={11} sm={9} md={6} className="p-3">
+        <div className="d-flex flex-column text-center">
           <StyledCarousel fade activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
               <Link to="/projects#vhvh">
@@ -61,8 +63,8 @@ function Slideshow() {
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
           </StyledCarousel>
-        </StyledDiv>
-      </Col>
+        </div>
+      </StyledCol>
     </Row>
   );
 }
