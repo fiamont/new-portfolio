@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { IoLogoGithub } from "react-icons/io";
+import { CgWebsite } from "react-icons/cg";
+import { FaArrowCircleDown } from "react-icons/fa";
 
 const StyledDiv = styled.div`
   background: #ececec;
@@ -22,6 +24,22 @@ const StyledGithub = styled(IoLogoGithub)`
   }
 `;
 
+const StyledWebsite = styled(CgWebsite)`
+  color: var(--dark-grey-color);
+
+  &:hover {
+    color: var(--light-orange-color);
+  }
+`;
+
+const StyledArrowDown = styled(FaArrowCircleDown)`
+  color: var(--dark-grey-color);
+
+  &:hover {
+    color: var(--light-orange-color);
+  }
+`;
+
 const ProjectBox = ({
   heading,
   imgSrc,
@@ -34,6 +52,8 @@ const ProjectBox = ({
   challengeText,
   solutionText,
   githubLink = "",
+  pageLink = "",
+  demoLink = "",
 }) => {
   return (
     <StyledDiv className="mt-3 mb-3">
@@ -57,6 +77,22 @@ const ProjectBox = ({
               Koden :
               <a href={githubLink} target="_blank" rel="noopener noreferrer">
                 <StyledGithub className="p-1 m-1 fs-1" />
+              </a>
+            </p>
+          )}
+          {pageLink && (
+            <p className="d-flex justify-content-end align-items-center m-3 me-4">
+              Hemsidan :
+              <a href={pageLink} target="_blank" rel="noopener noreferrer">
+                <StyledWebsite className="p-1 m-1 fs-1" />
+              </a>
+            </p>
+          )}
+          {demoLink && (
+            <p className="d-flex justify-content-end align-items-center m-3 me-4">
+              Se demo nedan :
+              <a href={demoLink}>
+                <StyledArrowDown className="p-1 m-1 fs-1" />
               </a>
             </p>
           )}

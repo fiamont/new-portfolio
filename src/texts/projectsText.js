@@ -4,7 +4,7 @@ export const projectText = {
     "Här är ett urval av de projekt jag har gjort eller håller på med. Längre ner på sidan finns det några demos också!",
   challenge: "Utmaning",
   solution: "Lösning",
-  contentDemo: "Demo-texten här",
+  contentDemo: "Demo under uppbyggnad!",
 };
 
 export const memory = {

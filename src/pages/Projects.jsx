@@ -7,6 +7,7 @@ import curvyLineOrange from "./../assets/curvyLineOrange.png";
 import { Row, Col } from "react-bootstrap";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { IoArrowUpOutline } from "react-icons/io5";
 import {
   vaxtverket,
   vhvh,
@@ -26,6 +27,18 @@ const StyledCol = styled(Col)`
 const StyledH2 = styled.h2`
   font-family: var(--heading-font-family);
 `;
+
+const StyledArrowUp = styled(IoArrowUpOutline)`
+  color: var(--dark-grey-color);
+
+  &:hover {
+    color: var(--light-orange-color);
+  }
+`;
+
+const handleScrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
 function Projects() {
   const location = useLocation();
@@ -77,6 +90,7 @@ function Projects() {
             challengeText={vhvh.challenge}
             solutionText={vhvh.solution}
             githubLink="https://github.com/fiamont/vhvh-frontend.git"
+            demoLink={"#vhvhDemo"}
           />
         </StyledCol>
         <StyledCol id="vaxtverket">
@@ -121,6 +135,7 @@ function Projects() {
             challengeText={memory.challenge}
             solutionText={memory.solution}
             githubLink="https://github.com/fiamont/sti-memory.git"
+            pageLink="https://fiamontmemory.vercel.app/"
           />
         </StyledCol>
         <StyledCol>
@@ -152,10 +167,20 @@ function Projects() {
         </Col>
       </Row>
       <Row className="d-flex justify-content-center align-items-center text-center">
-        <Col>
+        <Col className="d-flex flex-column justify-content-center align-items-center">
           <TextBox>{projectText.contentDemo}</TextBox>
-          <p>vhvh-demo...</p>
-          <VideoPlayer />
+          <div id="vhvhDemo">
+            <VideoPlayer />
+          </div>
+        </Col>
+      </Row>
+      <Row className="d-flex">
+        <Col className="d-flex justify-content-end">
+          <StyledArrowUp
+            onClick={handleScrollToTop}
+            size={30}
+            style={{ cursor: "pointer" }}
+          />
         </Col>
       </Row>
     </>

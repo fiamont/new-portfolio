@@ -1,7 +1,15 @@
+import workInProgress from "./../../../assets/demoWorkInProgress.png";
+
 function VideoPlayer() {
   return (
     <>
-      <h2>Video Player</h2>
+      <div>
+        <img
+          src={workInProgress}
+          alt="work in progress"
+          className="img-fluid"
+        />
+      </div>
     </>
   );
 }
