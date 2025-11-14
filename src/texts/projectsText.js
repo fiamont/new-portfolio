@@ -4,7 +4,7 @@ export const projectText = {
     "Här är ett urval av de projekt jag har gjort eller håller på med. Längre ner på sidan finns det några demos också!",
   challenge: "Utmaning",
   solution: "Lösning",
-  contentDemo: "Demo-texten här",
+  contentDemo: "Demo under uppbyggnad!",
 };
 
 export const memory = {
@@ -52,4 +52,14 @@ export const vaxtverket = {
     "Skapa en logotyp och att skapa en informationsprodukt anpassad till LinkedIn och använda den gemensamma grafiska profilen.",
   solution:
     "Logotypen blev en enkel blomma i gruppens valda färger och rund för att symbolisera gemenskap och hållbarhet. I informationsprodukten applicerade jag olika designprinciper, så som tredjedelsprincipen, kontrast, assymetrisk balans och white space.",
+};
+
+export const sjukhuset = {
+  heading: "Sjukhuset",
+  content:
+    "Ett projekt i kursen “Multimodal informationsdesign”, där man fick i uppdrag att skapa en informationsprodukt som kan användas i sjukhusmiljö.",
+  challenge:
+    "Designa en interaktiv informationsprodukt och bygg en prototyp i Figma.",
+  solution:
+    "Prototypen är avsedd för en touch-skärm med måtten 1080x1920 px, porträttläge, och är tänkt att stå precis vid entrén till ett sjukhus, där patienter och besökare kan interagera med den. De interaktiva delar som finns är dels knapptryck, dels scrollning/swipening neråt och dels för att komma tillbaka swipe åt sidorna eller tryck på pilen tillbaka. Det finns även QR-koder.",
 };
