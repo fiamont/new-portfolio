@@ -155,7 +155,7 @@ function Projects() {
             githubLink="https://github.com/fiamont/Sofias_Notepad.git"
           />
         </StyledCol>
-        <StyledCol>
+        <StyledCol id="sjukhuset">
           <ProjectBox
             heading={sjukhuset.heading}
             imgSrc={sjukhusetImg}

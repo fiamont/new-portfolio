@@ -5,6 +5,7 @@ import vaxtverketDesign from "./../../../assets/vaxtverketDesign.png";
 import vhvhStartsida from "./../../../assets/vhvhStartsida.png";
 import awesomeMemory from "./../../../assets/awesomeMemory.png";
 import unify from "./../../../assets/unify.png";
+import sjukhuset from "./../../../assets/sjukhuset.png";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -59,6 +60,12 @@ function Slideshow() {
             <Carousel.Item>
               <Link to="/projects#unify">
                 <img src={unify} text="unify" />
+              </Link>
+              <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Link to="/projects#sjukhuset">
+                <img src={sjukhuset} text="sjukhuset" />
               </Link>
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
