@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { IoLogoGithub } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg";
 import { FaArrowCircleDown } from "react-icons/fa";
+import { LuMonitorCog } from "react-icons/lu";
 
 const StyledDiv = styled.div`
   background: #ececec;
@@ -54,6 +55,7 @@ const ProjectBox = ({
   githubLink = "",
   pageLink = "",
   demoLink = "",
+  prototype = "",
 }) => {
   return (
     <StyledDiv className="mt-3 mb-3">
@@ -93,6 +95,14 @@ const ProjectBox = ({
               Se demo nedan :
               <a href={demoLink}>
                 <StyledArrowDown className="p-1 m-1 fs-1" />
+              </a>
+            </p>
+          )}
+          {prototype && (
+            <p className="d-flex justify-content-end align-items-center m-3 me-4">
+              Se prototypen här :
+              <a href={prototype} target="_blank" rel="noopener noreferrer">
+                <LuMonitorCog className="p-1 m-1 fs-1" />
               </a>
             </p>
           )}

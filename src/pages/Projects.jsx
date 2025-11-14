@@ -3,6 +3,7 @@ import sofiasNotepadImg from "./../assets/sofiasNotepad.png";
 import awesomeMemory from "./../assets/awesomeMemory.png";
 import unifyImg from "./../assets/unify.png";
 import vaxtverketImg from "./../assets/vaxtverketDesign.png";
+import sjukhusetImg from "./../assets/sjukhuset.png";
 import curvyLineOrange from "./../assets/curvyLineOrange.png";
 import { Row, Col } from "react-bootstrap";
 import { useEffect } from "react";
@@ -15,6 +16,7 @@ import {
   memory,
   sofiasNotepad,
   projectText,
+  sjukhuset,
 } from "../texts/projectsText";
 import { TextBox, ProjectBox, VideoPlayer } from "../components/index.js";
 import styled from "styled-components";
@@ -151,6 +153,21 @@ function Projects() {
             challengeText={sofiasNotepad.challenge}
             solutionText={sofiasNotepad.solution}
             githubLink="https://github.com/fiamont/Sofias_Notepad.git"
+          />
+        </StyledCol>
+        <StyledCol>
+          <ProjectBox
+            heading={sjukhuset.heading}
+            imgSrc={sjukhusetImg}
+            imgAlt="sofiasNotepadImg"
+            width={300}
+            height={157}
+            text={sjukhuset.content}
+            challenge={projectText.challenge}
+            solution={projectText.solution}
+            challengeText={sjukhuset.challenge}
+            solutionText={sjukhuset.solution}
+            prototype="https://www.figma.com/proto/Uc0QVCyxgI6GdRQKZKEFrR/Sjukhuset?node-id=22-37&t=1v7ucYbylWitBIG4-1"
           />
         </StyledCol>
       </Row>
